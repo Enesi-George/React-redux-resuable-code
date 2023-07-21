@@ -25,7 +25,7 @@ export const fetchUserFailure =error=> {
 export const fetchUsers =()=>{
     return (dispatch)=>{
         dispatch(fetchUserRequest())
-        axios.get(' https://api.github.com/users')
+        axios.get('https://api.github.com/users')
         .then(response =>{
             const users = response.data
             dispatch({
